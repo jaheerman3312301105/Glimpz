@@ -10,4 +10,3 @@ class ListBarangController extends Controller
         return view('list_barang', ['id' => $id, 'nama' => $nama]);
     }
 }
-//jaheerman
