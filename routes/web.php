@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\lisitem105;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/Dashboard105', function() {
+    return view('Dashboard105');
+});
+
+//Route::get('/listitem105', function() {
+//    return view('listitem105');
+//});
+
+
+Route::get('/listitem105', [lisitem105::class, 'tampilkan']);
