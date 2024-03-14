@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\lisitem105;
+use App\Http\Controllers\list105Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,4 +27,6 @@ Route::get('/Dashboard105', function() {
 //});
 
 
-Route::get('/listitem105', [lisitem105::class, 'tampilkan']);
+//Route::get('/listitem105', [lisitem105::class, 'tampilkan']);
+
+Route::get('/list_product105', [list105Controller::class, 'list105']);
